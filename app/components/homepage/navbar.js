@@ -2,8 +2,6 @@
 import Image from "next/image";
 import Link from "next/link";
 
-// import logoImg from "./public/logo.png"
-
 const Navbar = () => {
   return (
     <div className="container mx-auto">
