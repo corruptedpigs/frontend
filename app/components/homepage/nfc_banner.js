@@ -8,8 +8,9 @@ const Footer = () => {
       <div className="container mx-auto">
         <h2 className="text-2xl">Support us at the Non Fungible Conference</h2>
         <p className="text-xl">Meet us at the side event</p>
-        <img
+        <Image
           className="float-right"
+          alt="NFC logo"
           width={300}
           height={300}
           src="https://assets-global.website-files.com/65ba6e2ae14c08958104a6a8/65ba6e2ae14c08958104a775_NFC_testing-content-_-graphics-06.webp"/>

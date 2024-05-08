@@ -7,12 +7,12 @@ import Link from "next/link";
 const Footer = () => {
   return (
 
-    <footer className="footer items-center p-4 bg-neutral text-neutral-content md:place-items-center">
+    <footer className="footer items-center p-4 bg-neutral text-neutral-content">
         <nav className="mx-auto lg:mx-0">
           <p className="font-bold">© 2024 Corrupted Pigs, All rights reserved.</p>
         </nav>
         <nav className="mx-auto">
-          <Image src="/logoBW.png" height={120} width={124} className="invert-[.7]"/>
+          <Image src="/logoBW.png" alt="logo B&W" height={120} width={124} className="invert-[.7]"/>
         </nav>
         <nav className="mx-auto lg:mx-0 lg:place-self-center lg:justify-self-end">
           <h6 className="footer-title uppercase">Follow the Pigs</h6>

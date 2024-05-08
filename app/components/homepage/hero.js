@@ -33,7 +33,7 @@ const Hero = () => {
           <div className="md:flex md:justify-between">
             <div className="md:w-1/2 md:ml-6">
               <h1 className="mb-5 text-5xl font-bold">Power Up for Good</h1>
-              <p className="mb-5 text-2xl"> "Corrupted Pigs" NFTs fuel social causes. Play. Earn. Make a Difference.</p>
+              <p className="mb-5 text-2xl"> Corrupted Pigs&apos; NFTs fuel social causes. Play. Earn. Make a Difference.</p>
               <button class="btn btn-warning uppercase glass no-animation">Play the game</button>
             </div>
             <motion.div
@@ -56,7 +56,7 @@ const Hero = () => {
             <div className="lg:flex lg:justify-between">
               <div className="lg:w-1/2 lg:ml-6 text-neutral-content mx-10">
                 <h1 className="mb-5 text-5xl font-bold">Challenge the System.</h1>
-                <p className="mb-5 text-2xl">"Corrupted Pigs" Online Card Game - Coming Soon. Sharpen your skills and rise to the top.</p>
+                <p className="mb-5 text-2xl">Corrupted Pigs&apos; Online Card Game - Coming Soon. Sharpen your skills and rise to the top.</p>
             </div>
             <div className="lg:w-1/2 lg:ml-6">
               <div className="mockup-browser border bg-slate-300 max-w-xl mx-auto">
@@ -64,7 +64,7 @@ const Hero = () => {
                     <div className="input text-sm sm:text-base">https://corruptedpigs.com</div>
                 </div>
                 <div className="flex justify-center px-4 py-6 bg-slate-800">
-                    <Image src="/game-demo.jpeg" height={566} width={900}></Image>
+                  <Image src="/game-demo.jpeg" alt="Game demo" height={566} width={900}></Image>
                 </div>
               </div>
             </div>
