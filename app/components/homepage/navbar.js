@@ -16,11 +16,11 @@ const Navbar = () => {
           />
         </div>
         <div className="flex-none">
-          <ul className="menu menu-horizontal px-1 uppercase font-semibold">
-            <li><Link href="#">Games</Link></li>
+          <ul className="menu menu-horizontal px-1 uppercase font-bold">
+            <li><Link href="//corruptedpigs.notion.site/Game-Rules-643b79c0b7394b6dafd9adc54157cc80">Game Rules</Link></li>
             <li><Link href="//corruptedpigs.store">Merchandising</Link></li>
-            <li><Link href="#">About</Link></li>
-            <li><Link href="#" className="btn btn-sm btn-warning">Launch App</Link></li>
+            <li><Link href="#" className="drop-shadow-md">About</Link></li>
+            <li><Link href="#" className="btn btn-sm btn-warning glass no-animation">Play the game</Link></li>
           </ul>
         </div>
       </div>

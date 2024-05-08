@@ -31,3 +31,12 @@ body {
     text-wrap: balance;
   }
 }
+
+.navbar {
+  ul.menu {
+    li {
+      color: white;
+      text-shadow: white 1px 0 10px;
+    }
+  }
+}

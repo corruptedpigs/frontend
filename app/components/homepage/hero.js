@@ -6,8 +6,6 @@ import Image, { getImageProps } from 'next/image';
 import Navbar from "./navbar"
 import React, { useState } from 'react';
 
-
-
 function getBackgroundImage(sectionName, imageData) {
   if (sectionName in imageData) {
     return `url('${imageData[sectionName]}')`;  // Format background image URL
@@ -18,13 +16,10 @@ function getBackgroundImage(sectionName, imageData) {
 
 const Hero = () => {
   const imageData = {
-    hero: '/background.jpeg',
+    hero: '/background-3.jpeg',
     footer: '/background-2.jpeg',
   };
 
-  // const {
-  //   props: { srcSet },
-  // } = getImageProps({ alt: '', width: 900, height: 683, src: '/background.jpeg' })
   const heroBackgroundImage = getBackgroundImage('hero', imageData);
   const hero2BackgroundImage = getBackgroundImage('footer', imageData);
 
@@ -35,21 +30,21 @@ const Hero = () => {
 
         <div className="hero-overlay bg-opacity-60"></div>
         <div className="hero-content grid grid-cols-1 text-neutral-content container mx-auto py-20">
-          <div className="flex justify-between">
-            <div>
-              <h1 className="mb-5 text-5xl font-bold">Hero Label 1</h1>
-              <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-              <button class="btn btn-warning uppercase">Launch App</button>
+          <div className="md:flex md:justify-between">
+            <div className="md:w-1/2 md:ml-6">
+              <h1 className="mb-5 text-5xl font-bold">Power Up for Good</h1>
+              <p className="mb-5 text-2xl"> "Corrupted Pigs" NFTs fuel social causes. Play. Earn. Make a Difference.</p>
+              <button class="btn btn-warning uppercase glass no-animation">Play the game</button>
             </div>
             <motion.div
+              className="pt-16 md:pt-0 md:w-1/2 md:pl-20"
               initial={{ rotateY: 0 }}
               animate={{ rotateY: 360 }} // One full rotation
               duration={2} // Adjust duration (in seconds)
               ease="easeInOut" // Adjust easing function
               style={{ display: 'flex', /* additional styles */ }}
             >
-              {/* Your image elements here */}
-              <img src="/carta1.png" alt="Image description" />
+              <Image src="/carta1.png" alt="Pig card" height={400} width={400} className='mx-auto' />
             </motion.div>
           </div>
         </div>
@@ -57,23 +52,27 @@ const Hero = () => {
 
       <section id="hero2" style={{ backgroundImage: hero2BackgroundImage, backgroundSize: "cover" }} className='hero'>
         <div className="hero-overlay bg-opacity-60"></div>
-        <div className="hero-content grid grid-cols-1 container py-20">
-          <div className="flex justify-between flex-row-reverse">
-            <div className='text-neutral-content mx-10'>
-              <h1 className="mb-5 text-5xl font-bold">Hero Label 2</h1>
-              <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+          <div className="hero-content grid grid-cols-1 container py-20">
+            <div className="lg:flex lg:justify-between">
+              <div className="lg:w-1/2 lg:ml-6 text-neutral-content mx-10">
+                <h1 className="mb-5 text-5xl font-bold">Challenge the System.</h1>
+                <p className="mb-5 text-2xl">"Corrupted Pigs" Online Card Game - Coming Soon. Sharpen your skills and rise to the top.</p>
             </div>
-            <div className="mockup-browser border bg-slate-300">
-              <div className="mockup-browser-toolbar">
-                <div className="input">https://corruptedpigs.com</div>
-              </div>
-              <div className="flex justify-center px-4 py-6 bg-slate-800">
-                <Image src="/game-demo.jpeg" height={566} width={900}></Image>
+            <div className="lg:w-1/2 lg:ml-6">
+              <div className="mockup-browser border bg-slate-300 max-w-xl mx-auto">
+                <div className="mockup-browser-toolbar">
+                    <div className="input text-sm sm:text-base">https://corruptedpigs.com</div>
+                </div>
+                <div className="flex justify-center px-4 py-6 bg-slate-800">
+                    <Image src="/game-demo.jpeg" height={566} width={900}></Image>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+    </section>
+
+
     </>
   )
 }
