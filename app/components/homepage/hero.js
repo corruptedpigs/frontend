@@ -3,8 +3,8 @@
 
 import { motion } from 'framer-motion';
 import Image, { getImageProps } from 'next/image';
-import Navbar from "./navbar"
 import React, { useState } from 'react';
+import Navbar from "./navbar"
 
 function getBackgroundImage(sectionName, imageData) {
   if (sectionName in imageData) {
@@ -29,7 +29,7 @@ const Hero = () => {
         <Navbar />
 
         <div className="hero-overlay bg-opacity-60"></div>
-        <div className="hero-content grid grid-cols-1 text-neutral-content container mx-auto py-20">
+        <div className="hero-content grid grid-cols-1 container py-20">
           <div className="md:flex md:justify-between">
             <div className="md:w-1/2 md:ml-6">
               <h1 className="mb-5 text-5xl font-bold">Power Up for Good</h1>

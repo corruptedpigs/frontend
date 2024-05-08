@@ -35,8 +35,7 @@ body {
 .navbar {
   ul.menu {
     li {
-      color: white;
-      text-shadow: white 1px 0 10px;
+      text-shadow: white 4px 3px 10px;
     }
   }
 }
