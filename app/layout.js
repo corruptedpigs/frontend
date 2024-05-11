@@ -6,8 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Corrupted Pigs",
-  description: "Corrupted Pigs' NFTs fuel social causes. Play. Earn. Make a Difference.",
-  viewport: 'width=device-width, initial-scale=1',
+  description: "Corrupted Pigs' NFTs fuel social causes. Play. Earn. Make a Difference."
 };
 
 export default function RootLayout({ children }) {

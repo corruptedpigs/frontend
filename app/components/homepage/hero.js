@@ -1,14 +1,18 @@
 // import InstituitionsRollbar from './institutions_rollbar';
 "use client";
 
-import { motion } from 'framer-motion';
 import { useEffect } from 'react';
-import Carousel from "react-spring-3d-carousel";
 import { v4 as uuidv4 } from 'uuid';
 import Image, { getImageProps } from 'next/image';
 import React, { useState } from 'react';
 import Navbar from "./navbar";
 import CtaGoogleAnalytics from "../cta_google_analytics";
+import dynamic from 'next/dynamic';
+
+const Carousel = dynamic(
+  () => import('react-spring-3d-carousel'),
+  { ssr: false }
+);
 
 function getBackgroundImage(sectionName, imageData) {
   if (sectionName in imageData) {
@@ -47,16 +51,12 @@ const Hero = () => {
       key: uuidv4(),
       content: <Image src="/carta2.png" alt="Pig card2" height={600} width={600}/>
     },
-    // {
-    //   key: uuidv4(),
-    //   content: <Image src="/carta3.png" alt="Pig card3" height={600} width={600}/>
-    // }
   ];
 
   useEffect(() => {
     const intervalId = setInterval(() => {
       setActiveSlide((prevIndex) => (prevIndex + 1) % slides.length);
-    }, 4000); // Change 1000 to adjust rotation interval (in milliseconds)
+    }, 2500); // Change 1000 to adjust rotation interval (in milliseconds)
 
     return () => clearInterval(intervalId); // Cleanup function to stop interval on unmount
   }, [slides.length]);
