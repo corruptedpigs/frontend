@@ -2,6 +2,9 @@
 "use client";
 
 import { motion } from 'framer-motion';
+import { useEffect } from 'react';
+import Carousel from "react-spring-3d-carousel";
+import { v4 as uuidv4 } from 'uuid';
 import Image, { getImageProps } from 'next/image';
 import React, { useState } from 'react';
 import Navbar from "./navbar";
@@ -20,6 +23,43 @@ const Hero = () => {
     hero: '/background-3.jpeg',
     footer: '/background-2.jpeg',
   };
+
+  const [activeSlide, setActiveSlide] = useState(0);
+
+  const slides = [
+    {
+      key: uuidv4(),
+      content: <Image src="/carta1.png" alt="Pig card1" height={600} width={600}/>
+    },
+    {
+      key: uuidv4(),
+      content: <Image src="/carta2.png" alt="Pig card2" height={600} width={600}/>
+    },
+    {
+      key: uuidv4(),
+      content: <Image src="/carta3.png" alt="Pig card3" height={600} width={600}/>
+    },
+    {
+      key: uuidv4(),
+      content: <Image src="/carta1.png" alt="Pig card1" height={600} width={600}/>
+    },
+    {
+      key: uuidv4(),
+      content: <Image src="/carta2.png" alt="Pig card2" height={600} width={600}/>
+    },
+    // {
+    //   key: uuidv4(),
+    //   content: <Image src="/carta3.png" alt="Pig card3" height={600} width={600}/>
+    // }
+  ];
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setActiveSlide((prevIndex) => (prevIndex + 1) % slides.length);
+    }, 4000); // Change 1000 to adjust rotation interval (in milliseconds)
+
+    return () => clearInterval(intervalId); // Cleanup function to stop interval on unmount
+  }, [slides.length]);
 
   const heroBackgroundImage = getBackgroundImage('hero', imageData);
   const hero2BackgroundImage = getBackgroundImage('footer', imageData);
@@ -44,16 +84,10 @@ const Hero = () => {
                   ctaLabel="cta-merch-hero"
                 />
               </div>
-              <motion.div
-                className="pt-16 md:pt-0 md:w-1/2 md:pl-20"
-                initial={{ rotateY: 0 }}
-                animate={{ rotateY: 360 }} // One full rotation
-                duration={2} // Adjust duration (in seconds)
-                ease="easeInOut" // Adjust easing function
-                style={{ display: 'flex', /* additional styles */ }}
-              >
-                <Image src="/carta1.png" alt="Pig card" height={400} width={400} className='mx-auto' />
-              </motion.div>
+
+              <div style={{ height: "500px", width: "100%" }}>
+                  <Carousel slides={slides} goToSlide={activeSlide}/>
+              </div>
             </div>
           </div>
         </div>
