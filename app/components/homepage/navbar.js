@@ -10,7 +10,6 @@ const Navbar = () => {
           <div className="hidden md:block">
             <Image src="/logo.png"
               alt="corrupted pigs logo"
-              className="dark:invert"
               height={120}
               width={124}
               priority
@@ -29,9 +28,9 @@ const Navbar = () => {
               </svg>
             </div>
             <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 w-52 text-black">
-              <li><Link href="//corruptedpigs.notion.site/Game-Rules-643b79c0b7394b6dafd9adc54157cc80">Game Rules</Link></li>
-              <li><Link href="//corruptedpigs.store">Merchandising</Link></li>
-              <li><Link href="#" className="drop-shadow-md">About</Link></li>
+              <li><Link className="menu-title" href="//corruptedpigs.notion.site/Game-Rules-643b79c0b7394b6dafd9adc54157cc80">Game Rules</Link></li>
+              <li><Link className="menu-title" href="//corruptedpigs.store">Merchandising</Link></li>
+              <li><Link className="menu-title" href="#">About</Link></li>
               <li><Link href="#" className="btn btn-sm btn-warning glass no-animation">Play the game</Link></li>
             </ul>
           </div>
@@ -39,7 +38,6 @@ const Navbar = () => {
         <div className="navbar-center md:hidden">
           <Image src="/logo.png"
             alt="corrupted pigs logo"
-            className="dark:invert"
             height={120}
             width={124}
             priority
@@ -49,7 +47,7 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1 uppercase font-bold">
             <li><Link href="//corruptedpigs.notion.site/Game-Rules-643b79c0b7394b6dafd9adc54157cc80">Game Rules</Link></li>
             <li><Link href="//corruptedpigs.store">Merchandising</Link></li>
-            <li><Link href="#" className="drop-shadow-md">About</Link></li>
+            <li><Link href="#">About</Link></li>
             <li><Link href="#" className="btn btn-sm btn-warning glass no-animation">Play the game</Link></li>
           </ul>
         </div>
