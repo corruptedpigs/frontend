@@ -38,7 +38,7 @@ const Hero = () => {
                 <h1 className="mb-5 text-5xl font-bold">Power Up for Good</h1>
                 <p className="mb-5 text-2xl"> Corrupted Pigs&apos; NFTs fuel social causes. Play. Earn. Make a Difference.</p>
                 <CtaGoogleAnalytics
-                  buttonText="Get your T-shirth with the pigs"
+                  buttonText="Get your T-shirt with the pigs"
                   buttonClass="btn btn-warning"
                   url="//corruptedpigs.store"
                   ctaLabel="cta-merch-hero"
