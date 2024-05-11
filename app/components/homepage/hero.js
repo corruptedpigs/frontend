@@ -4,7 +4,8 @@
 import { motion } from 'framer-motion';
 import Image, { getImageProps } from 'next/image';
 import React, { useState } from 'react';
-import Navbar from "./navbar"
+import Navbar from "./navbar";
+import CtaGoogleAnalytics from "../cta_google_analytics";
 
 function getBackgroundImage(sectionName, imageData) {
   if (sectionName in imageData) {
@@ -34,7 +35,12 @@ const Hero = () => {
             <div className="md:w-1/2 md:ml-6">
               <h1 className="mb-5 text-5xl font-bold">Power Up for Good</h1>
               <p className="mb-5 text-2xl"> Corrupted Pigs&apos; NFTs fuel social causes. Play. Earn. Make a Difference.</p>
-              <button class="btn btn-warning uppercase glass no-animation">Play the game</button>
+              <CtaGoogleAnalytics
+                buttonText="Get your T-shirth with the pigs"
+                buttonClass="btn btn-warning"
+                url="//corruptedpigs.store"
+                ctaLabel="cta-merch-hero"
+              />
             </div>
             <motion.div
               className="pt-16 md:pt-0 md:w-1/2 md:pl-20"

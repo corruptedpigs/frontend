@@ -1,6 +1,7 @@
 // import InstituitionsRollbar from './institutions_rollbar';
 import Image from "next/image";
 import Link from "next/link";
+import CtaGoogleAnalytics from "../cta_google_analytics";
 
 const Navbar = () => {
   return (
@@ -29,7 +30,15 @@ const Navbar = () => {
             </div>
             <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 w-52 text-black">
               <li><Link className="menu-title" href="//corruptedpigs.notion.site/Game-Rules-643b79c0b7394b6dafd9adc54157cc80">Game Rules</Link></li>
-              <li><Link className="menu-title" href="//corruptedpigs.store">Merchandising</Link></li>
+              <li>
+                <CtaGoogleAnalytics
+                  buttonText="Merchandising"
+                  buttonClass=""
+                  url="//corruptedpigs.store"
+                  ctaLabel="cta-merch-nav"
+                />
+                <Link className="menu-title" href="//corruptedpigs.store">Merchandising</Link>
+              </li>
               <li><Link className="menu-title" href="#">About</Link></li>
               <li><Link href="#" className="btn btn-sm btn-warning glass no-animation">Play the game</Link></li>
             </ul>
@@ -46,7 +55,14 @@ const Navbar = () => {
         <div className="navbar-center hidden md:flex text-black">
           <ul className="menu menu-horizontal px-1 uppercase font-bold">
             <li><Link href="//corruptedpigs.notion.site/Game-Rules-643b79c0b7394b6dafd9adc54157cc80">Game Rules</Link></li>
-            <li><Link href="//corruptedpigs.store">Merchandising</Link></li>
+            <li>
+              <CtaGoogleAnalytics
+                buttonText="Merchandising"
+                buttonClass=""
+                url="//corruptedpigs.store"
+                ctaLabel="cta-merch-nav"
+              />
+            </li>
             <li><Link href="#">About</Link></li>
             <li><Link href="#" className="btn btn-sm btn-warning glass no-animation">Play the game</Link></li>
           </ul>
