@@ -14,7 +14,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>{children}</body>
-      <GoogleAnalytics gaId={process.env.GOOGLE_ANALYTICS} />
+      {process.env.NODE_ENV === 'production' && (
+        <GoogleAnalytics gaId={process.env.GOOGLE_ANALYTICS} />
+      )}
     </html>
   );
 }
