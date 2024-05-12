@@ -5,6 +5,7 @@ import { useEffect } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import Image, { getImageProps } from 'next/image';
 import React, { useState } from 'react';
+import { config } from "react-spring";
 import Navbar from "./navbar";
 import CtaGoogleAnalytics from "../cta_google_analytics";
 import dynamic from 'next/dynamic';
@@ -70,7 +71,6 @@ const Hero = () => {
         <Navbar />
 
         <div className='hero'>
-
           <div className="hero-overlay bg-opacity-70"></div>
           <div className="hero-content grid grid-cols-1 container py-20">
             <div className="md:flex md:justify-between">
@@ -78,15 +78,15 @@ const Hero = () => {
                 <h1 className="mb-5 text-5xl font-bold">Power Up for Good</h1>
                 <p className="mb-5 text-2xl"> Corrupted Pigs&apos; NFTs fuel social causes. Play. Earn. Make a Difference.</p>
                 <CtaGoogleAnalytics
-                  buttonText="Get your T-shirt with the pigs"
-                  buttonClass="btn btn-warning"
+                  buttonText="Get your t-shirt and support the cause"
+                  buttonClass="btn btn-warning hover:animate-[wiggle_1s_ease-in-out_infinite]"
                   url="//corruptedpigs.store"
                   ctaLabel="cta-merch-hero"
                 />
               </div>
 
               <div style={{ height: "500px", width: "100%" }}>
-                  <Carousel slides={slides} goToSlide={activeSlide}/>
+                  <Carousel slides={slides} goToSlide={activeSlide} animationConfig={config.slow}/>
               </div>
             </div>
           </div>
