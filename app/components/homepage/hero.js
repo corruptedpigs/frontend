@@ -25,8 +25,8 @@ function getBackgroundImage(sectionName, imageData) {
 
 const Hero = () => {
   const imageData = {
-    hero: '/background-3.jpeg',
-    footer: '/background-2.jpeg',
+    hero: '/background-3.png',
+    footer: '/TRADER-2-faded.png',
   };
 
   const [activeSlide, setActiveSlide] = useState(0);
@@ -67,11 +67,11 @@ const Hero = () => {
 
   return (
     <>
-      <section id="hero1" style={{ backgroundImage: heroBackgroundImage, backgroundSize: "cover" }}>
+      <section id="hero1" style={{ backgroundImage: heroBackgroundImage, backgroundSize: "cover", backgroundPosition: 'center' }}>
         <Navbar />
 
         <div className='hero'>
-          <div className="hero-overlay bg-opacity-70"></div>
+          <div className="hero-overlay custom-hero-overlay"></div>
           <div className="hero-content grid grid-cols-1 container py-20">
             <div className="md:flex md:justify-between">
               <div className="md:w-1/2 md:ml-6 text-neutral-content">
@@ -93,8 +93,8 @@ const Hero = () => {
         </div>
       </section>
 
-      <section id="hero2" style={{ backgroundImage: hero2BackgroundImage, backgroundSize: "cover" }} className='hero'>
-        <div className="hero-overlay bg-opacity-70"></div>
+      <section id="hero2" style={{ backgroundImage: hero2BackgroundImage, backgroundSize: "contain", backgroundPosition: 'left', backgroundRepeat: "no-repeat" }} className='hero'>
+        <div className="hero-overlay custom-hero-overlay"></div>
         <div className="hero-content grid grid-cols-1 py-20">
           <div className="lg:flex lg:justify-between">
             <div className="lg:w-1/2 lg:ml-6 text-neutral-content mx-10">

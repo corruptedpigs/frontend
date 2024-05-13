@@ -7,9 +7,9 @@ import Link from "next/link";
 const Footer = () => {
   return (
 
-    <footer className="footer items-center p-4 bg-neutral text-neutral-content">
+    <footer className="footer items-center p-4 bg-neutral text-neutral-content" style={{ backgroundColor: "#020023" }}>
         <nav className="mx-auto lg:mx-0">
-          <p className="font-bold">© 2024 Corrupted Pigs, All rights reserved.</p>
+          <p className="text-sm font-bold">© 2024 Corrupted Pigs, All rights reserved.</p>
         </nav>
         <nav className="mx-auto">
           <Image src="/logoBW.png" alt="logo B&W" height={120} width={124} className="invert-[.7]"/>

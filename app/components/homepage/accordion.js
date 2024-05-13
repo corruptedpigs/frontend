@@ -4,9 +4,9 @@ import Link from "next/link";
 
 const Accordion = () => {
   return (
-    <section id="about" className="py-10 md:py-16 bg-slate-500 text-neutral-content">
+    <section id="about" className="py-10 md:py-16 text-neutral-content" style={{ backgroundColor: "#020023" }}>
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold mb-4">FAQ</h2>
+        <h2 className="text-4xl font-bold mb-4 text-center">FAQ</h2>
         <div className="collapse collapse-arrow">
           <input type="radio" name="my-accordion-2" />
           <div className="collapse-title text-xl font-medium">
