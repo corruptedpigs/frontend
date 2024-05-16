@@ -1,4 +1,3 @@
-// import InstituitionsRollbar from './institutions_rollbar';
 import Image from "next/image";
 import Link from "next/link";
 import CtaGoogleAnalytics from "../cta_google_analytics";
