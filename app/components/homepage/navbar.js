@@ -5,17 +5,9 @@ import CtaGoogleAnalytics from "../cta_google_analytics";
 const Navbar = () => {
   return (
     <div className="navbar text-neutral-content">
-      <div className="navbar-start md:w-20">
-        <div className="hidden md:block">
-          <Image src="/logo.png"
-            alt="corrupted pigs logo"
-            height={120}
-            width={124}
-            priority
-          />
-        </div>
+      <div className="navbar-start lg:w-20">
         <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost md:hidden">
+          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -42,7 +34,7 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
-      <div className="navbar-center md:hidden">
+      <div className="navbar-center lg:hidden">
         <Image src="/logo.png"
           alt="corrupted pigs logo"
           height={70}
@@ -50,7 +42,7 @@ const Navbar = () => {
           priority
         />
       </div>
-      <div className="navbar-end hidden md:flex md:flex-1">
+      <div className="navbar-end hidden lg:flex lg:flex-1">
         <ul className="menu menu-horizontal px-1 uppercase font-bold">
           <li><Link href="//corruptedpigs.notion.site/Game-Rules-643b79c0b7394b6dafd9adc54157cc80">Game Rules</Link></li>
           <li>

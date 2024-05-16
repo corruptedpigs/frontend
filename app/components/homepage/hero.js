@@ -73,8 +73,16 @@ const Hero = () => {
         <div className='hero'>
           <div className="hero-overlay custom-hero-overlay"></div>
           <div className="hero-content grid grid-cols-1 container py-20">
-            <div className="md:flex md:justify-between">
-              <div className="md:w-1/2 md:ml-6 text-neutral-content">
+            <div className="lg:flex lg:justify-between">
+              <div className="lg:w-1/2 lg:ml-6 text-neutral-content">
+              <div className="hidden lg:block mb-4">
+                  <Image src="/logo.png"
+                    alt="corrupted pigs logo"
+                    height={120}
+                    width={124}
+                    priority
+                  />
+                </div>
                 <h1 className="mb-5 text-5xl font-bold">Power Up for Good</h1>
                 <p className="mb-5 text-2xl"> Corrupted Pigs&apos; NFTs fuel social causes. Play. Earn. Make a Difference.</p>
                 <CtaGoogleAnalytics
@@ -86,7 +94,7 @@ const Hero = () => {
               </div>
 
               <div style={{ height: "500px", width: "100%" }}>
-                  <Carousel slides={slides} goToSlide={activeSlide} animationConfig={config.slow}/>
+                <Carousel slides={slides} goToSlide={activeSlide} animationConfig={config.slow}/>
               </div>
             </div>
           </div>
