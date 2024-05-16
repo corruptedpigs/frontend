@@ -1,4 +1,3 @@
-// import InstituitionsRollbar from './institutions_rollbar';
 import Image from "next/image";
 import Link from "next/link";
 
@@ -7,7 +6,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
 
-    <footer className="footer items-center p-4 bg-neutral text-neutral-content" style={{ backgroundColor: "#020023" }}>
+    <footer className="footer items-center p-4 bg-violet text-neutral-content">
         <nav className="mx-auto lg:mx-0">
           <p className="text-sm font-bold">© 2024 Corrupted Pigs, All rights reserved.</p>
         </nav>

@@ -1,10 +1,6 @@
-// import InstituitionsRollbar from './institutions_rollbar';
-import Image from "next/image";
-import Link from "next/link";
-
 const Accordion = () => {
   return (
-    <section id="about" className="py-10 md:py-16 text-neutral-content" style={{ backgroundColor: "#020023" }}>
+    <section id="about" className="bg-violet py-10 md:py-16 text-neutral-content">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold mb-4 text-center">FAQ</h2>
         <div className="collapse collapse-arrow">
