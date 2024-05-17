@@ -8,7 +8,8 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Corrupted Pigs",
   description: "Corrupted Pigs' NFTs fuel social causes. Play. Earn. Make a Difference.",
-  og: {
+  keywords: "NFT game, social good, donate to institutions, crowdfunding, animal farm, fight corruption",
+  openGraph: {
     description: "Corrupted Pigs' NFTs fuel social causes. Play. Earn. Make a Difference.",
     image: "https://corruptedpigs.com/image-twitter-CP-launching-soon.jpg"
   }
