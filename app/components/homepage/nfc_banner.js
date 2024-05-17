@@ -5,7 +5,25 @@ import Link from "next/link";
 const NFCBanner = () => {
   return (
     <section id="nfc-side-event" style={ { backgroundColor: "rgb(200, 255, 0)", minHeight: "280px" } } className="py-10 px-10 md:py-20">
-      <div className="flex flex-row flex-wrap container justify-center">
+      <div className="flex flex-row-reverse  flex-wrap  container justify-center space-x-10 space-y-6">
+        <div className="max-w-screen-lg space-y-6">
+          <h2 className="text-5xl ">Show your pride in the Corrupted Pigs community!
+          </h2>
+          <p className="text-2xl">
+            Our T-shirts are more than just merch — they&#39;re a statement.
+          </p>
+          <p className="text-2xl">
+            Get yours today.
+          </p>
+          <Link
+            className="btn btn-white btn-wide hover:animate-bounce"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="//corruptedpigs.store">
+              Check out our merch
+          </Link>
+        </div>
+
         <div>
           <h2 className="text-2xl text-slate-800">Support us at the</h2>
           <Link
@@ -21,14 +39,6 @@ const NFCBanner = () => {
             </Link>
         </div>
 
-        <div className="max-w-screen-md space-y-6">
-          <h2 className="text-5xl ">Show your pride in the Corrupted Pigs community!
-          </h2>
-          <p className="text-2xl">
-            Our T-shirts are more than just merch—they're a statement. Get yours today.
-          </p>
-          <Link className="btn btn-white btn-wide hover:animate-bounce" href="//corruptedpigs.store">Check out our merch</Link>
-        </div>
       </div>
     </section>
   )
