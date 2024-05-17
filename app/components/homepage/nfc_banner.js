@@ -21,9 +21,13 @@ const NFCBanner = () => {
             </Link>
         </div>
 
-        <div>
-          <Link className="btn btn-wide btn-disabled" href="#">Sign up for the side event</Link>
-          <p className="text-slate-800 font-mono">To be announced</p>
+        <div className="max-w-screen-md space-y-6">
+          <h2 className="text-5xl ">Show your pride in the Corrupted Pigs community!
+          </h2>
+          <p className="text-2xl">
+            Our T-shirts are more than just merch—they're a statement. Get yours today.
+          </p>
+          <Link className="btn btn-white btn-wide hover:animate-bounce" href="//corruptedpigs.store">Check out our merch</Link>
         </div>
       </div>
     </section>
