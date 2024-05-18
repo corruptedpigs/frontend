@@ -6,11 +6,11 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Corrupted Pigs",
-  description: "Corrupted Pigs' NFTs fuel social causes. Play. Earn. Make a Difference.",
+  title: "Corrupted Pigs - NFT Collection & Social Game",
+  description: "Welcome to the official home of Corrupted Pigs. Join us to explore our unique NFT collection and engaging social game. Log in to access exclusive perks, participate in the burning pigs game, and discover the benefits of holding our NFTs and Coinks tokens.",
   keywords: "NFT game, social good, donate to institutions, crowdfunding, animal farm, fight corruption",
   openGraph: {
-    description: "Corrupted Pigs' NFTs fuel social causes. Play. Earn. Make a Difference.",
+    description: "Welcome to the official home of Corrupted Pigs. Join us to explore our unique NFT collection and engaging social game. Log in to access exclusive perks, participate in the burning pigs game, and discover the benefits of holding our NFTs and Coinks tokens.",
     image: "https://corruptedpigs.com/image-twitter-CP-launching-soon.jpg"
   }
 };
