@@ -29,6 +29,7 @@ const Navbar = () => {
               />
             </li>
             <li><Link href="#associations">Associations</Link></li>
+            <li><Link href="#roadmap">Roadmap</Link></li>
             <li><Link href="#about">About</Link></li>
             <li><Link href="#" className="btn btn-sm btn-warning glass no-animation">Play the game</Link></li>
           </ul>
@@ -54,6 +55,7 @@ const Navbar = () => {
             />
           </li>
           <li><Link href="#associations">Associations</Link></li>
+          <li><Link href="#roadmap">Roadmap</Link></li>
           <li><Link href="#about">About</Link></li>
           <li><Link href="#" className="btn btn-sm btn-warning glass no-animation">Play the game</Link></li>
         </ul>

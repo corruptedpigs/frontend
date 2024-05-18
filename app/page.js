@@ -5,6 +5,7 @@ import Hero2 from "./components/homepage/hero2"
 import NFCBanner from "./components/homepage/nfc_banner"
 import Associations from "./components/homepage/associations"
 import Accordion from "./components/homepage/accordion"
+import Roadmap from "./components/homepage/roadmap"
 import Footer from "./components/homepage/footer"
 
 function getBackgroundImage(image_path) {
@@ -22,6 +23,7 @@ export default function Home() {
       <Hero2/>
       <Associations/>
       <NFCBanner/>
+      <Roadmap/>
       <Accordion/>
       <Footer/>
     </main>
