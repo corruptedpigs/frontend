@@ -3,9 +3,25 @@ const Roadmap = () => {
     <section id="roadmap" className="bg-violet py-10 md:py-16">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold mb-4 text-center text-neutral-content">Roadmap</h2>
-        <ul className="timeline timeline-vertical">
+        <ul className="timeline timeline-vertical mx-auto max-w-screen-lg">
           <li>
-            <div className="timeline-start text-neutral-content">Q1 2024</div>
+            <div className="timeline-start timeline-box">Q1 2024</div>
+            <div className="timeline-middle">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+            </div>
+            <div className="timeline-end text-neutral-content">
+              <p>
+                <span className="font-bold">Project Conceptualization:</span> Define on which blockchain the NFTs will be deployed.
+              </p>
+              <p>
+              <span className="font-bold">Team Structure:</span> Recruit key team members, including developers, designers, and community managers.
+              </p>
+            </div>
+            <hr className="bg-purple"/>
+          </li>
+          <li>
+            <hr className="bg-purple"/>
+            <div className="timeline-start text-neutral-content">Q2 2024</div>
             <div className="timeline-middle">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
             </div>
@@ -38,12 +54,12 @@ const Roadmap = () => {
             <div className="timeline-middle">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
             </div>
-            <div className="timeline-end text-neutral-content">Q2 2024</div>
+            <div className="timeline-end text-neutral-content">Q3 2024</div>
             <hr/>
           </li>
           <li>
             <hr/>
-            <div className="timeline-start text-neutral-content">Q3 2024</div>
+            <div className="timeline-start text-neutral-content">Q4 2024</div>
             <div className="timeline-middle">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
             </div>
@@ -59,7 +75,7 @@ const Roadmap = () => {
           </li>
           <li>
             <hr/>
-            <div className="timeline-end text-neutral-content">Q4 2024</div>
+            <div className="timeline-end text-neutral-content">Q1 2025</div>
             <div className="timeline-middle">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
             </div>
@@ -78,7 +94,7 @@ const Roadmap = () => {
           </li>
           <li>
             <hr/>
-            <div className="timeline-start text-neutral-content">Q1 2025</div>
+            <div className="timeline-start text-neutral-content">Q2 2025</div>
             <div className="timeline-middle">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
             </div>
