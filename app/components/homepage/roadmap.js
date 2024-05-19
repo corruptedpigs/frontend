@@ -31,9 +31,6 @@ const Roadmap = () => {
           <li>
             <hr className="bg-orange-700 glow"/>
             <div className="timeline-start timeline-date">Q2 2024</div>
-            <div className="timeline-middle">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
-            </div>
             <div className="timeline-end timeline-box bg-transparent">
               <dl>
                 <dt className="underline">Project Conceptualization</dt>
@@ -62,18 +59,12 @@ const Roadmap = () => {
                 <dd>Release a beta version of the burning pigs game for selected players.</dd>
               </dl>
             </div>
-            <div className="timeline-middle">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
-            </div>
             <div className="timeline-end timeline-date">Q3 2024</div>
             <hr/>
           </li>
           <li>
             <hr/>
             <div className="timeline-start timeline-date">Q4 2024</div>
-            <div className="timeline-middle">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
-            </div>
             <div className="timeline-end timeline-box bg-transparent">
               <dl>
                 <dt className="underline">Full Game Launch</dt>
@@ -88,9 +79,6 @@ const Roadmap = () => {
           <li>
             <hr/>
             <div className="timeline-end timeline-date">Q1 2025</div>
-            <div className="timeline-middle">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
-            </div>
             <div className="timeline-start timeline-box bg-transparent">
               <dl>
                 <dt className="underline">Exclusive Content</dt>
@@ -108,9 +96,6 @@ const Roadmap = () => {
           <li>
             <hr/>
             <div className="timeline-start timeline-date">Q2 2025</div>
-            <div className="timeline-middle">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
-            </div>
             <div className="timeline-end timeline-box bg-transparent">
               <dl>
                 <dt className="underline">Continuous Updates</dt>
