@@ -25,6 +25,7 @@ export default function Home() {
       <NFCBanner/>
       <Roadmap/>
       <Accordion/>
+      <hr className="bg-purple glow"/>
       <Footer/>
     </main>
   );

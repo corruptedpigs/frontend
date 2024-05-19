@@ -48,6 +48,15 @@ body {
   }
 }
 
+hr {
+  &.glow {
+    box-shadow: 0 0 24px var(--color-glow), /* Inner glow */
+                 0 0 24px var(--color-glow), /* Middle glow */
+                 0 0 24px var(--color-glow); /* Outer glow */
+    border: solid 1px var(--color-glow); /* Optional: solid border to enhance the effect */
+  }
+}
+
 #roadmap {
   .timeline {
     dt {
@@ -57,13 +66,6 @@ body {
 
     hr {
       width: 1.5em;
-
-      &.glow {
-        box-shadow: 0 0 24px var(--color-glow), /* Inner glow */
-                     0 0 24px var(--color-glow), /* Middle glow */
-                     0 0 24px var(--color-glow); /* Outer glow */
-        border: solid 1px var(--color-glow); /* Optional: solid border to enhance the effect */
-      }
     }
 
     .timeline-date {
