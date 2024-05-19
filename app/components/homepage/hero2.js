@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section id="hero2" style={{ backgroundImage: "url('/TRADER-2-faded.png')", backgroundSize: "contain", backgroundPosition: 'left', backgroundRepeat: "no-repeat" }} className='hero'>
       <div className="hero-overlay custom-hero-overlay"></div>
-      <div className="hero-content grid grid-cols-1 py-20">
+      <div className="hero-content grid grid-cols-1 py-12">
         <div className="lg:flex lg:justify-between">
           <div className="lg:w-1/2 lg:ml-6 text-neutral-content mx-10">
             <h1 className="mb-5 text-5xl font-bold">Challenge the System.</h1>
@@ -16,7 +16,7 @@ const Hero = () => {
             </p>
             <Link className="link" href="//corruptedpigs.notion.site/Game-Rules-643b79c0b7394b6dafd9adc54157cc80">Game Rules</Link>
           </div>
-          <div className="lg:w-1/2 lg:ml-6">
+          <div className="lg:w-1/2 lg:ml-6 mt-8 lg:mt-0">
             <div className="mockup-browser border bg-slate-300 max-w-xl mx-auto">
               <div className="mockup-browser-toolbar">
                 <div className="input text-sm sm:text-base">https://corruptedpigs.com</div>
