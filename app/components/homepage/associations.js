@@ -1,10 +1,9 @@
-// import InstituitionsRollbar from './institutions_rollbar';
 import Image from "next/image";
 import Link from "next/link";
 
 const Associations = () => {
   return (
-    <section id="associations" className="py-10 px-2 lg:py-20 text-center">
+    <section id="associations" className="py-10 px-2 lg:py-12 text-center">
       <h2 className="text-4xl font-bold text-purple mb-1">Associations</h2>
       <h3 className="text-xl font-bold text-purple mb-6">List of projects that need our support</h3>
 
@@ -22,8 +21,8 @@ const Associations = () => {
                   href="//enea.apambiente.pt/content/projeto-rios"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn bg-pink text-white"
-                >Visit Website</Link>
+                  className="link"
+                >Read more</Link>
               </div>
             </div>
           </div>
@@ -41,8 +40,8 @@ const Associations = () => {
                   href="//patav.weebly.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn bg-pink text-white"
-                >Visit Website</Link>
+                  className="link"
+                >Read more</Link>
               </div>
             </div>
           </div>
@@ -60,8 +59,8 @@ const Associations = () => {
                   href="//www.baladi.pt"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn bg-pink text-white"
-                >Visit Website</Link>
+                  className="link"
+                >Read more</Link>
               </div>
             </div>
           </div>

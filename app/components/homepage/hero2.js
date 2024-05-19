@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 const Hero = () => {
@@ -9,7 +10,11 @@ const Hero = () => {
         <div className="lg:flex lg:justify-between">
           <div className="lg:w-1/2 lg:ml-6 text-neutral-content mx-10">
             <h1 className="mb-5 text-5xl font-bold">Challenge the System.</h1>
-            <p className="mb-5 text-2xl">Corrupted Pigs&apos; Online Card Game - Coming Soon. Sharpen your skills and rise to the top.</p>
+            <h2 className="mb-5 text-2xl">Corrupted Pigs&apos; Online Card Game - Coming Soon. Sharpen your skills and rise to the top.</h2>
+            <p>
+              &quot;Corrupted Pigs&quot; is an NFT collection, where users can purchase unique digital assets. These NFTs grant access to three distinct games within our platform. As players engage with these games, a portion of the proceeds from burning NFTs will be donated to social causes. It&apos;s a novel way to combine gaming, rewards, and social impact, all while supporting meaningful initiatives. 🎮🐷 oink oink
+            </p>
+            <Link className="link" href="//corruptedpigs.notion.site/Game-Rules-643b79c0b7394b6dafd9adc54157cc80">Game Rules</Link>
           </div>
           <div className="lg:w-1/2 lg:ml-6">
             <div className="mockup-browser border bg-slate-300 max-w-xl mx-auto">

@@ -1,8 +1,16 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import CtaGoogleAnalytics from "../cta_google_analytics";
 
 const Navbar = () => {
+  const discordInviteLink = '//discord.gg/x6uJ65PpPj';
+
+  const handleDiscordButtonClick = () => {
+    window.location.href = discordInviteLink;
+  };
+
   return (
     <div className="navbar text-neutral-content">
       <div className="navbar-start lg:w-20">
@@ -19,7 +27,6 @@ const Navbar = () => {
             </svg>
           </div>
           <ul tabIndex={0} className="menu dropdown-content mt-3 z-[1] p-2 rounded-box shadow bg-slate-600 text-neutral-content border-solid w-52">
-            <li><Link href="//corruptedpigs.notion.site/Game-Rules-643b79c0b7394b6dafd9adc54157cc80">Game Rules</Link></li>
             <li>
               <CtaGoogleAnalytics
                 buttonText="Merchandising"
@@ -29,9 +36,12 @@ const Navbar = () => {
               />
             </li>
             <li><Link href="#associations">Associations</Link></li>
+            <li><Link href="/about">Meet the Team</Link></li>
             <li><Link href="#roadmap">Roadmap</Link></li>
             <li><Link href="#about">About</Link></li>
-            <li><Link href="#" className="btn btn-sm btn-warning glass no-animation">Play the game</Link></li>
+            <li>
+              <button onClick={handleDiscordButtonClick} className="btn btn-sm btn-warning uppercase">Join waiting list</button>
+            </li>
           </ul>
         </div>
       </div>
@@ -45,7 +55,6 @@ const Navbar = () => {
       </div>
       <div className="navbar-end hidden lg:flex lg:flex-1">
         <ul className="menu menu-horizontal px-1 uppercase font-bold">
-          <li><Link href="//corruptedpigs.notion.site/Game-Rules-643b79c0b7394b6dafd9adc54157cc80">Game Rules</Link></li>
           <li>
             <CtaGoogleAnalytics
               buttonText="Merchandising"
@@ -55,9 +64,12 @@ const Navbar = () => {
             />
           </li>
           <li><Link href="#associations">Associations</Link></li>
+          <li><Link href="/about">Meet the Team</Link></li>
           <li><Link href="#roadmap">Roadmap</Link></li>
           <li><Link href="#about">About</Link></li>
-          <li><Link href="#" className="btn btn-sm btn-warning glass no-animation">Play the game</Link></li>
+          <li>
+            <button onClick={handleDiscordButtonClick} className="btn btn-sm btn-warning uppercase">Join waiting list</button>
+          </li>
         </ul>
       </div>
     </div>
