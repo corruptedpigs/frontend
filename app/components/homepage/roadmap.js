@@ -46,7 +46,7 @@ const Roadmap = () => {
             <hr className="bg-orange-600 glow"/>
           </li>
           <li>
-            <hr className="bg-yellow-300 glow"/>
+            <hr/>
             <div className="timeline-start timeline-box bg-transparent">
               <dl>
                 <dt className="underline">NFT Collection Launch</dt>
