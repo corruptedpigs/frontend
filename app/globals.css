@@ -65,7 +65,11 @@ hr {
     }
 
     hr {
-      width: 1.5em;
+      width: 0.8em;
+
+      @media (min-width: 768px) {
+        width: 1.25em;
+      }
     }
 
     .timeline-date {
